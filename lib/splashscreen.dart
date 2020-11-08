@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
-
 import 'home.dart';
 
 class MySplash extends StatefulWidget {
@@ -16,7 +15,7 @@ class _MySplashState extends State<MySplash> {
       routeName: "/",
       navigateAfterSeconds: Home(),
       title: Text(
-        'Flower recognizer',
+        'Flower Predictor',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 30,
@@ -24,15 +23,14 @@ class _MySplashState extends State<MySplash> {
         ),
       ),
       image: Image.asset('assets/flower.png'),
-      backgroundColor: Colors.black,
-      photoSize: 50,
+      photoSize: 50.0,
       gradientBackground: LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         stops: [0.004, 1],
         colors: [
-          Color(0xFFA8E063),
-          Color(0xFF56AB2F),
+          Color(0xFFa8e063),
+          Color(0xFF56ab2f),
         ],
       ),
       loaderColor: Colors.white,
